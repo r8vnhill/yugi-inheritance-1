@@ -13,8 +13,7 @@ In "Yu-Gi-Oh!", there are two types of monster cards:
 - Main Deck Monsters
 - Extra Deck Monsters
 
-Each type of monster belongs in its respective deck. You will need to implement the necessary classes and methods to
-support this.
+Each type of monster belongs in its respective deck. You will NOT implement the monster classes in this exercise.
 
 ### Decks
 
@@ -32,20 +31,16 @@ implementations.
     - Utilize the provided `Deck` trait to implement two classes: `MainDeck` and `ExtraDeck`.
     - Ensure that only the appropriate type of monster can be added to each deck.
 
-2. **Create Monster Classes:**
-    - Design and implement classes for "Main Deck Monsters" and "Extra Deck Monsters".
-    - Both types of monsters should conform to a `Card` trait.
-
-3. **Test-Driven Development (TDD):**
+2. **Test-Driven Development (TDD):**
     - Use TDD to guide the development of your classes.
     - Write tests before implementing the functionalities to ensure that your code meets all the requirements.
 
-4. **Project Structure:**
+3. **Project Structure:**
     - Your project should be well-structured, with separate packages for different components.
     - Properly organize your classes and traits within these packages.
     - You can move the provided code to a separate package if you wish.
 
-5. **Documentation:**
+4. **Documentation:**
    - Provide a UML diagram showcasing the class structure of your implementation.
    - Include comments in your code to explain the purpose of each class and method, use the provided code as a
      reference.

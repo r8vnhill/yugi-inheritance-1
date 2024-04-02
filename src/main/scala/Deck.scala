@@ -26,17 +26,17 @@ trait Deck {
     */
   def search(name: String): Option[Card]
 
-  /** Adds a card to the deck.
-    *
-    * @param card The Card to add to the deck.
-    * @return A new Deck instance with the card added.
-    */
-  def addCard(card: Card): Deck
-
   /** Removes a card by name from the deck.
     *
     * @param name The name of the card to remove from the deck.
     * @return A new Deck instance with the card removed.
     */
   def removeCard(name: String): Deck
+
+  /** Adds a card to the deck.
+    *
+    * @param card The card to add to the deck.
+    * @return A new Deck instance with the card added.
+    */
+  def addCard(card: Card): Deck
 }

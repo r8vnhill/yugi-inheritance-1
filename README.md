@@ -49,18 +49,24 @@ implementations.
 
 ```scala
 trait Card {
-  val name: String
+   val name: String
 }
 
 trait Deck {
-  val size: Int
-  val cards: List[Card]
-  def draw: (Card, Deck)
-  def shuffle: Deck
-  def search(name: String): Option[Card]
-  def addCard(card: Card): Deck
-  def removeCard(name: String): Deck
+   val size: Int
+   val cards: List[Card]
+
+   def draw: (Card, Deck)
+
+   def shuffled: Deck
+
+   def search(name: String): Option[Card]
+
+   def addCard(card: Card): Deck
+
+   def removeCard(name: String): Deck
 }
+
 ```
 
 You cannot modify the provided code. You must implement your classes based on the provided traits.

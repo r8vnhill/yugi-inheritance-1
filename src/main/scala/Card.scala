@@ -1,13 +1,19 @@
-/** A trait representing the fundamental properties of a card in a card game.
-  *
-  * This trait is intended to be implemented by any class that represents a card.
-  */
-trait Card {
+import java.util.Objects
 
-  /** The name of the card.
-    *
-    * This is a 'val' meaning it is immutable and should be assigned a value when a concrete class implementing this
-    * trait is instantiated.
-    */
-  val name: String
+/** A class representing the fundamental properties of a card in a card game.
+ *
+ * @param name The name of the card.
+ */
+class Card(val name: String) {
+  override def toString: String = s"Card(name='$name')"
+
+  //noinspection TypeCheckCanBeMatch
+  override def equals(obj: Any): Boolean = if (obj.isInstanceOf[Card]) {
+    val other = obj.asInstanceOf[Card]
+    name == other.name
+  } else {
+    false
+  }
+
+  override def hashCode(): Int = Objects.hash(classOf[Card].hashCode(), name)
 }

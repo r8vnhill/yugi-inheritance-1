@@ -88,3 +88,7 @@ You cannot modify the provided code. You must implement your classes based on th
 ## Note
 
 Remember to listen to the heart of the cards.
+
+## Solution
+
+https://github.com/dcc-cc3002/yu-gi-oh-deck-and-monster-class-architecture-exercise-r8vnhill

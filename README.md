@@ -48,8 +48,17 @@ implementations.
 ## Provided Code
 
 ```scala
-trait Card {
-   val name: String
+class Card(val name: String) {
+   override def toString: String = s"Card(name='$name')"
+
+   override def equals(obj: Any): Boolean = if (obj.isInstanceOf[Card]) {
+      val other = obj.asInstanceOf[Card]
+      name == other.name
+   } else {
+      false
+   }
+
+   override def hashCode(): Int = Objects.hash(classOf[Card].hashCode(), name)
 }
 
 trait Deck {

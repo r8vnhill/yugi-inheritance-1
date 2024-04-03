@@ -1,6 +1,6 @@
 import java.util.Objects
 
-/** A class representing the fundamental properties of a card in a card game.
+/** A class representing the fundamental properties of a card in a Yu-Gi-Oh! deck.
  *
  * @param name The name of the card.
  */
